@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  --red: #f74343;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Readex Pro", sans-serif;
+  color: var(--red);
+}
+
+.left > * {
+  margin-left: 2rem;
+}
+
+.left,
+.right {
+  padding-top: calc(50vh - 10rem);
+}
+
+a {
+  color: var(--red);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: #f7434350;
+}
+
+.left {
+  position: fixed;
+  float: left;
+  background-color: white;
+  width: 50vw;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+}
+
+.right {
+  position: fixed;
+  float: right;
+  background-color: var(--red);
+  width: 50vw;
+  height: 100vh;
+  right: 0px;
+  top: 0px;
+}
+
+.left *::selection {
+  background-color: var(--red);
+  color: white;
+}
+
+.left p {
+  width: 80%;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+button {
+  background-color: var(--red);
+  border-radius: 0.4rem;
+  padding: 0.6rem;
+  font-family: "Space Grotesk", sans-serif;
+  color: white;
+  outline: none;
+  border: 0px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f7434370;
+}
+
+.buttons {
+  margin-top: 1rem;
+}
+
+.logo {
+  position: fixed;
+  left: 71vw;
+  top: calc(25vh + 6vw);
+  width: 8vw;
+}
+
+.socials * {
+  height: 2rem;
+}
+
+.socials {
+  margin-top: 1rem;
+}
+
+.socials path {
+  fill: var(--red);
+}
+
+.socials svg {
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+.socials svg:hover {
+  opacity: 1;
+}
+
+.socials a {
+  margin-right: 0.5rem;
+}
+
+.socials * {
+  width: 2rem !important;
+}
+
+.type {
+  font-family: "Space Mono", monospace;
+  display: none;
+}
+
+.title-text {
+  text-align: center;
+  position: fixed;
+  left: 0.25rem;
+  bottom: 0.25rem;
+  font-family: "Space Mono", monospace;
+
+  position: fixed;
+  left: 50vw;
+  top: calc(50vh + 6vw);
+  width: 50vw;
+}
+
+.title-text span,
+.title-text span * {
+  color: white;
+}
+
+.title-text span {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+  cursor: default;
+}
+
+.title-text span:hover {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  opacity: 1;
+}
+
+.title-text span.main {
+  opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+  .right {
+    width: 100vw;
+    position: absolute !important;
+    top: 0px;
+    left: 0px;
+    height: 40rem;
+  }
+
+  .left {
+    margin-top: 40rem;
+    position: relative;
+    height: 30rem;
+    padding-top: 0px;
+    width: 100%;
+  }
+
+  .left p {
+    width: 80vw;
+  }
+
+  .logo {
+    width: 25vw;
+    left: 37.5vw;
+    top: calc(15vh + 8vw);
+  }
+
+  .title-text {
+    left: 0px;
+    top: calc(50vh + 15vw);
+    width: 100%;
+  }
+}
