@@ -161,6 +161,81 @@ button:hover {
   opacity: 1;
 }
 
+@media (pointer: none), (pointer: coarse) {
+  .right {
+    width: 100vw;
+    position: absolute !important;
+    top: 0px;
+    left: 0px;
+    height: 40rem;
+  }
+
+  .left {
+    margin-top: 40rem;
+    position: relative;
+    height: 30rem;
+    padding-top: 0px;
+    width: 100%;
+  }
+
+  .left p {
+    width: 80vw;
+  }
+
+  .logo {
+    width: 25vw;
+    left: 37.5vw;
+    top: calc(15vh + 8vw);
+  }
+
+  .title-text {
+    left: 0px;
+    top: calc(50vh + 15vw);
+    width: 100%;
+  }
+
+  p {
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+
+  .logo {
+    width: 15vw;
+    left: 43.5vw;
+    top: 10rem;
+  }
+
+  .title-text {
+    left: 0px;
+    top: 25rem;
+    width: 100%;
+    font-size: 2rem;
+  }
+
+  .right {
+    padding-top: 0px;
+  }
+
+  button {
+    padding: 1rem;
+    font-size: 1.8rem;
+    border-radius: 1rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .socials {
+    margin-top: 1rem;
+  }
+
+  .socials * {
+    width: 4rem !important;
+    height: 4rem;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .right {
     width: 100vw;
@@ -192,5 +267,47 @@ button:hover {
     left: 0px;
     top: calc(50vh + 15vw);
     width: 100%;
+  }
+
+  p {
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+
+  .logo {
+    width: 15vw;
+    left: 43.5vw;
+    top: 10rem;
+  }
+
+  .title-text {
+    left: 0px;
+    top: 25rem;
+    width: 100%;
+    font-size: 2rem;
+  }
+
+  .right {
+    padding-top: 0px;
+  }
+
+  button {
+    padding: 1rem;
+    font-size: 1.8rem;
+    border-radius: 1rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .socials {
+    margin-top: 1rem;
+  }
+
+  .socials * {
+    margin-right: 1rem;
+    width: 4rem !important;
+    height: 4rem;
   }
 }
